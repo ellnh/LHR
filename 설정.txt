@@ -1,0 +1,93 @@
+이것은 넷플릭스 오리지널 영화 '케이팝 데몬 헌터스'에 관한 거야.
+구성된 페이지
+1. 케이팝 데몬 헌터스 영화 소개하기
+2. 세계관 설명하기
+3.케이팝 데몬 헌터스(케데헌)에 나오는 아이돌 그룹인 헌트릭스에 관해 소개하기 
+4. 케데헌에 나오는 아이돌 사자보이즈에 관해 설명하기
+5. 케데헌 OST 소개하기
+
+헌트릭스 멤버:
+루미(Rumi) - 리더 겸 메인보컬. 주무기는 사인검.
+미라(Mira) - 멤버들 중 최장신. 메인댄서. 주무기는 곡도.
+조이(Zoey) - 막내 겸 랩, 작사 담당. 주무기는 신칼. 
+
+사자보이즈 멤버:
+진우(Jinu) - 사자 보이즈의 리더. 나름대로 비중이 분배되어 있는 헌트릭스 3인방과 달리 작품 내 비중을 사실상 독차지하고 있다.
+애비- 보컬과 피지컬 담당.
+베이비 -랩 담당.
+미스터리.
+로맨스 .
+정적 왭사이트와 HTML,CSS,JS를 활용하여 다시 만들어줘
+
+디자인 개선:
+Google Noto Sans KR 폰트 추가
+그라데이션 헤더 배경
+호버 애니메이션 추가
+섹션별 스크롤 애니메이션
+멤버 카드에 더 많은 정보 표시
+
+JavaScript 추가:
+호버 효과
+스크롤
+
+애니메이션OST:
+1)How It’s Done
+HUNTR X - EJAE, 오드리 누나, REI AMI, KPop Demon Hunters Cast
+비행기에서의 전투에서 부른 곡
+2)Soda Pop
+Saja Boys - Andrew Choi, Neckwav, Danny Chung, 케빈, samUIL Lee, KPop Demon Hunters Cast
+3)Golden
+HUNTR X - EJAE, 오드리 누나, REI AMI, KPop Demon Hunters Cast
+4)Takedown
+HUNTR X - EJAE, 오드리 누나, REI AMI, KPop Demon Hunters Cast
+5)Your Idol
+Saja Boys - Andrew Choi, Neckwav, Danny Chung, 케빈, samUIL Lee, KPop Demon Hunters Cast
+6)Free
+Rumi, Jinu - EJAE, Andrew Choi, KPop Demon Hunters Cast
+루미와 진우의 듀엣곡
+7)What It Sounds Like
+HUNTR X - EJAE, 오드리 누나, REI AMI, KPop Demon Hunters Cast
+귀마를 무찌를 때 부른 대단원 곡. 골든의 멜로디가 샘플링되어 들어있기도 하다. 5에는 OST도 추가해줘
+
+
+
+01. How It's Done
+HUNTR X - EJAE, 오드리 누나, REI AMI, KPop Demon Hunters Cast
+
+비행기에서의 전투에서 부른 곡
+
+02. Soda Pop
+Saja Boys - Andrew Choi, Neckwav, Danny Chung, 케빈, samUIL Lee, KPop Demon Hunters Cast
+
+03. Golden
+HUNTR X - EJAE, 오드리 누나, REI AMI, KPop Demon Hunters Cast
+
+04. Takedown
+HUNTR X - EJAE, 오드리 누나, REI AMI, KPop Demon Hunters Cast
+
+05. Your Idol
+Saja Boys - Andrew Choi, Neckwav, Danny Chung, 케빈, samUIL Lee, KPop Demon Hunters Cast
+
+06. Free
+Rumi, Jinu - EJAE, Andrew Choi, KPop Demon Hunters Cast
+루미와 진우의 듀엣곡
+
+07. What It Sounds Like
+HUNTR X - EJAE, 오드리 누나, REI AMI, KPop Demon Hunters Cast
+
+
+각 노래를 클릭하면 바로 노래를 들을 수 있게 해줘. 
+1)의 링크는 https://www.youtube.com/watch?v=QGsevnbItdU&list=RDQGsevnbItdU&start_radio=1 
+2)의 링크는 https://www.youtube.com/watch?v=eny0BqmSwmM&list=RDeny0BqmSwmM&start_radio=1
+3)의 링크는 https://www.youtube.com/watch?v=yebNIHKAC4A&list=RDyebNIHKAC4A&start_radio=1
+4)의 링크는 https://www.youtube.com/watch?v=7XRcflf_E0c&list=RD7XRcflf_E0c&start_radio=1
+5)의 링크는 https://www.youtube.com/watch?v=tvRbXnJwW7A&list=RDtvRbXnJwW7A&start_radio=1
+6)의 링크는 https://www.youtube.com/watch?v=1xMDiXOQtos&list=RD1xMDiXOQtos&start_radio=1
+7)의 링크는 https://www.youtube.com/watch?v=A3TjVdYN4MY&list=RDA3TjVdYN4MY&start_radio=1
+
+
+
+
+
+
+

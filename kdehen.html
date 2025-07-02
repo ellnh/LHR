@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>케이팝 데몬 헌터스 - K-POP DEMON HUNTERS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(45deg, #ff00ff, #00ff00);
+        }
+        .header h1 {
+            color: white;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            background-color: #2a2a2a;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            position: relative;
+        }
+        .nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ff00ff;
+            transition: width 0.3s;
+        }
+        .nav a:hover::after {
+            width: 100%;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        .section h2 {
+            color: #ff00ff;
+            margin-top: 0;
+            text-align: center;
+        }
+        .group-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .member-card {
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        .member-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff00ff;
+        }
+        .member-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+            object-fit: contain;
+            object-position: center;
+            background-color: #1a1a1a;
+        }
+        .member-card:hover img {
+            transform: scale(1.1);
+        }
+        .member-info {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .member-info span {
+            color: #ff00ff;
+            font-weight: bold;
+        }
+        .ost-list {
+            display: grid;
+            gap: 20px;
+            padding: 10px;
+        }
+        .track {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        .track:hover {
+            transform: translateY(-5px);
+            border-color: #ff00ff;
+        }
+        .track h3 {
+            color: #ff00ff;
+            margin: 0 0 5px 0;
+            font-size: 18px;
+        }
+        .track p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .note {
+            color: #ff00ff;
+            font-style: italic;
+            font-size: 12px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #000;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>케이팝 데몬 헌터스</h1>
+        <p>K-POP DEMON HUNTERS</p>
+    </div>
+
+    <div class="nav">
+        <a href="#intro">영화 소개</a>
+        <a href="#worldview">세계관</a>
+        <a href="#huntrix">헌트릭스</a>
+        <a href="#sazaboys">사자보이즈</a>
+        <a href="#ost">OST</a>
+    </div>
+
+    <div class="section" id="intro">
+        <h2>케이팝 데몬 헌터스</h2>
+        <p>넷플릭스 오리지널 영화 '케이팝 데몬 헌터스'는 아이돌 그룹이 악마를 사냥하는 이야기를 다룬 독특한 장르의 영화입니다. 
+        현대 서울을 배경으로 한 이 영화는 아이돌과 악마, 그리고 그 사이에서 벌어지는 흥미진진한 이야기를 담고 있습니다.</p>
+    </div>
+
+    <div class="section" id="worldview">
+        <h2>세계관</h2>
+        <p>2024년 서울을 배경으로 한 이 세계에서는 아이돌 그룹들이 악마를 사냥하는 특수한 능력을 지니고 있습니다. 
+        이들은 공연을 통해 악마를 끌어모으고, 그들을 처치하여 세상의 평화를 지키는 역할을 합니다.</p>
+        <p>악마들은 인간의 부정적인 감정을 먹고 자라며, 그들의 활동이 증가할수록 세상은 점점 더 어두워집니다. 
+        아이돌 그룹들은 이러한 악마들을 제거하여 세상의 균형을 유지하는 중요한 역할을 맡고 있습니다.</p>
+    </div>
+
+    <div class="section" id="huntrix">
+        <h2>헌트릭스 (HUNTRIX)</h2>
+        <div class="group-members">
+            <div class="member-card">
+                <img src="https://via.placeholder.com/150" alt="루미">
+                <h3>루미 (Rumi)</h3>
+                <div class="member-info">
+                    <p>역할: <span>리더, 메인보컬</span></p>
+                    <p>주무기: <span>사인검</span></p>
+                </div>
+            </div>
+            <div class="member-card">
+                <img src="https://via.placeholder.com/150" alt="미라">
+                <h3>미라 (Mira)</h3>
+                <div class="member-info">
+                    <p>역할: <span>메인댄서</span></p>
+                    <p>주무기: <span>곡도</span></p>
+                </div>
+            </div>
+            <div class="member-card">
+                <img src="https://via.placeholder.com/150" alt="조이">
+                <h3>조이 (Zoey)</h3>
+                <div class="member-info">
+                    <p>역할: <span>막내, 랩, 작사</span></p>
+                    <p>주무기: <span>신칼</span></p>
+                </div>
+            </div>
+        </div>
+        <p>헌트릭스는 악마 사냥에 특화된 3인조 아이돌 그룹으로, 각 멤버들이 독특한 능력을 지니고 있습니다.</p>
+    </div>
+
+    <div class="section" id="sazaboys">
+        <h2>사자보이즈 (SAZA BOYS)</h2>
+        <div class="group-members">
+            <div class="member-card">
+                <img src="진우.wedp" alt="진우">
+                <h3>진우 (Jinu)</h3>
+                <div class="member-info">
+                    <p>역할: <span>리더</span></p>
+                    <p>특징: <span>작품 내 비중 독차지</span></p>
+                </div>
+            </div>
+            <div class="member-card">
+                <img src="애비2.gif" alt="애비2">
+                <h3>애비</h3>
+                <div class="member-info">
+                    <p>역할: <span>보컬, 피지컬</span></p>
+                </div>
+            </div>
+            <div class="member-card">
+                <img src="베이비1.gif" alt="베이비1">
+                <h3>베이비</h3>
+                <div class="member-info">
+                    <p>역할: <span>랩</span></p>
+                </div>
+            </div>
+            <div class="member-card">
+                <img src="미스터리2.gif" alt="미스터리2">
+                <h3>미스터리</h3>
+                <div class="member-info">
+                    <p>역할: <span>보컬</span></p>
+                </div>
+            </div>
+            <div class="member-card">
+                <img src="로맨스.jpg" alt="로맨스" style="width: 150px; height: 150px;">
+                <h3>로맨스</h3>
+                <div class="member-info">
+                    <p>역할: <span>보컬</span></p>
+                </div>
+            </div>
+        </div>
+        <p>사자보이즈는 헌트릭스와 함께 활동하는 5인조 남자 아이돌 그룹으로, 각 멤버들이 독특한 능력을 지니고 있습니다.</p>
+    </div>
+
+    <div class="section" id="ost">
+        <h2>OST</h2>
+        <div class="ost-list">
+            <div class="track">
+                <a href="https://www.youtube.com/watch?v=QGsevnbItdU&list=RDQGsevnbItdU&start_radio=1" target="_blank">
+                    <h3>01. How It's Done</h3>
+                    <p>HUNTR X - EJAE, 오드리 누나, REI AMI, KPop Demon Hunters Cast</p>
+                    <p class="note">비행기에서의 전투에서 부른 곡</p>
+                </a>
+            </div>
+            <div class="track">
+                <a href="https://www.youtube.com/watch?v=eny0BqmSwmM&list=RDeny0BqmSwmM&start_radio=1" target="_blank">
+                    <h3>02. Soda Pop</h3>
+                    <p>Saja Boys - Andrew Choi, Neckwav, Danny Chung, 케빈, samUIL Lee, KPop Demon Hunters Cast</p>
+                </a>
+            </div>
+            <div class="track">
+                <a href="https://www.youtube.com/watch?v=yebNIHKAC4A&list=RDyebNIHKAC4A&start_radio=1" target="_blank">
+                    <h3>03. Golden</h3>
+                    <p>HUNTR X - EJAE, 오드리 누나, REI AMI, KPop Demon Hunters Cast</p>
+                </a>
+            </div>
+            <div class="track">
+                <a href="https://www.youtube.com/watch?v=7XRcflf_E0c&list=RD7XRcflf_E0c&start_radio=1" target="_blank">
+                    <h3>04. Takedown</h3>
+                    <p>HUNTR X - EJAE, 오드리 누나, REI AMI, KPop Demon Hunters Cast</p>
+                </a>
+            </div>
+            <div class="track">
+                <a href="https://www.youtube.com/watch?v=tvRbXnJwW7A&list=RDtvRbXnJwW7A&start_radio=1" target="_blank">
+                    <h3>05. Your Idol</h3>
+                    <p>Saja Boys - Andrew Choi, Neckwav, Danny Chung, 케빈, samUIL Lee, KPop Demon Hunters Cast</p>
+                </a>
+            </div>
+            <div class="track">
+                <a href="https://www.youtube.com/watch?v=1xMDiXOQtos&list=RD1xMDiXOQtos&start_radio=1" target="_blank">
+                    <h3>06. Free</h3>
+                    <p>Rumi, Jinu - EJAE, Andrew Choi, KPop Demon Hunters Cast</p>
+                    <p class="note">루미와 진우의 듀엣곡</p>
+                </a>
+            </div>
+            <div class="track">
+                <a href="https://www.youtube.com/watch?v=A3TjVdYN4MY&list=RDA3TjVdYN4MY&start_radio=1" target="_blank">
+                    <h3>07. What It Sounds Like</h3>
+                    <p>HUNTR X - EJAE, 오드리 누나, REI AMI, KPop Demon Hunters Cast</p>
+                    <p class="note">귀마를 무찌를 때 부른 대단원 곡. 골든의 멜로디가 샘플링되어 들어있기도 하다.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>케이팝 데몬 헌터스 정보 페이지</p>
+        <p>© 2025 K-POP DEMON HUNTERS</p>
+    </div>
+
+    <script>
+        // 호버 효과 추가
+        document.querySelectorAll('.member-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+
+        // 섹션 스크롤 애니메이션
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.section').forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionBottom = section.getBoundingClientRect().bottom;
+                
+                if (sectionTop < window.innerHeight && sectionBottom > 0) {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // 페이지 로드 시 모든 섹션 숨김
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(50px)';
+            });
+        });
+    </script>
+</body>
+</html>
